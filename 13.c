@@ -1,13 +1,14 @@
 #include <stdio.h>
 int main()
 {
-	int x, y, cont;
+	int x, y, cont, s;
 	y = 0;
-	scanf("Entre com um valor inteiro: %d", &x);
-	for(cont = 1; cont <= x; cont++)
+	scanf("%d", &x);
+	for(cont = 1; cont < x; cont++)
 	{
 		y = y + cont;
 	}
-	printf(x+y);
+	s = x + y;
+	printf("%d\n", s);
 	return 0;
 }

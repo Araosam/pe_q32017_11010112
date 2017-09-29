@@ -2,11 +2,11 @@
 int main()
 {
 	int n,p;
-	scanf("Entre com um valor inteiro: %d", &n);
+	scanf("%d", &n);
 	for (p = n-1; p >=1; p--)
 	{
 		n = n*p;
 	}
-	printf(n);
+	printf("%d\n", n);
 	return 0;
 }

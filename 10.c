@@ -3,20 +3,20 @@ int main()
 {
 	double temp;
 	int op;
-	scanf("Entre com dois valores inteiros: %d %d", &temp, &op);
+	scanf("%lf %d", &temp, &op);
 	if (op == 1)
 	{
 	temp = temp + 273.15;
-	printf(temp);
+	printf("%lf\n", temp);
 	}
 	else if (op == 2)
 	{
 	temp = temp - 273.15;
-	printf(temp);
+	printf("%lf\n", temp);
 	}
 	else
 	{
-	printf("Erro!");	
+	printf("Erro!\n");	
 	}
 	return 0;
 }

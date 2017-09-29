@@ -1,12 +1,15 @@
 #include <stdio.h>
+#include <math.h>
+#include <errno.h>
+#include <fenv.h>
 int main()
 {
-	int x, y, c;
-	scanf("Entre com dois valores inteiros: %d %d", &x, &y);
-	for (c = 1; c <= y); c++)
+	int x, y, c, s = 1;
+	scanf("%d %d", &x, &y);
+	for (c = 0; c < y; c++)
 	{
-		x = x*c;
+	s *= x;
 	}
-	printf(x);
+	printf("%d\n", s);
 	return 0;
 }
