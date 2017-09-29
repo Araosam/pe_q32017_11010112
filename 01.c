@@ -2,7 +2,7 @@
 int main()
 {
 	int n;
-	scanf("Entre com um valor inteiro: %d", &n);
+	scanf("%d", &n);
 	if (n%2 == 0)
 	{
 		printf("par\n"); 
